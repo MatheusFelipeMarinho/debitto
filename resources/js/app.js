@@ -63,10 +63,12 @@ const router = new VueRouter({
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
- 
+
 // Components
 Vue.component('pagination', require('laravel-vue-pagination'));
 Vue.component('dashboard', require('./components/Dashboard.vue'));
+Vue.component('debtors', require('./components/Debtors.vue'));
+
 
 Vue.component(
     'passport-clients',
