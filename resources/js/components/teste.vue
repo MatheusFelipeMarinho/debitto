@@ -1,7 +1,7 @@
 <template>
   <div>
     <top-nav-bar />
-    <!-- <hr /> -->
+    <hr class="m-0" />
     <sub-nav-bar />
   </div>
 </template>
