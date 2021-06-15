@@ -9,22 +9,26 @@
           >
         </li>
         <li class="nav-item">
-          <a class="nav-link">Devedores</a>
+          <a class="nav-link">
+            <i class="fas fa-user-circle fa-lg mr-1" />Devedores</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link">Financeiro</a>
+          <a class="nav-link"
+            ><i class="fas fa-dollar-sign fa-lg mr-1" /> Financeiro</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link">More</a>
+          <a class="nav-link"><i class="fas fa-handshake" /> Acordos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link">Nice staff</a>
+          <a class="nav-link"><i class="fas fa-chart-pie" /> Pesquisas</a>
         </li>
       </ul>
 
       <ul class="navbar-nav mr-5 pr-4">
         <li class="nav-item">
-          <a class="nav-link">Configurações</a>
+          <a class="nav-link"> <i class="fas fa-cog" /> Configurações</a>
         </li>
       </ul>
     </div>
