@@ -48,7 +48,7 @@
                   </div>
                   <div class="mb-2">
                     <small style="color: #324e6f">
-                      Total de pagamentos do periodo</small
+                      Total de pagamentos do período</small
                     >
                   </div>
                 </div>
@@ -75,70 +75,21 @@
             </div>
           </div>
 
-          <div class="card">
-            <div class="card-body p-0">
-              <div class="row">
-                <div
-                  class="
-                    col-4
-                    d-flex
-                    align-items-center
-                    flex-column
-                    justify-content-between
-                    p-4
-                  "
-                >
-                  <div class="mb-4">
-                    <span class="fa-stack fa-3x">
-                      <i
-                        class="fas fa-circle fa-stack-2x"
-                        style="color: #d6dce2"
-                      ></i>
-                      <img
-                        src="/images/agreement.svg"
-                        alt="The Logo"
-                        style="opacity: 0.8"
-                      />
-                    </span>
-                  </div>
-                  <div>
-                    <h5 class="font-weight-bold" style="color: #324e6f">
-                      R$ 0,00
-                    </h5>
-                  </div>
-                  <div class="mb-4">
-                    <small style="color: #324e6f">
-                      Acordos a receber, em andamento
-                    </small>
-                  </div>
-                </div>
-                <div
-                  class="
-                    col-md-8
-                    d-flex
-                    align-items-center
-                    flex-column
-                    justify-content-between
-                    p-4
-                  "
-                >
-                  <div>
-                    <div class="mb-3" style="color: #f6f6f6">
-                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <card-quantity-receivables-progress />
+
+          <div class="row">
+            <div class="col">
+              <card-quantity-emails />
+            </div>
+            <div class="col">
+              <card-quantity-debtor-interactions />
             </div>
           </div>
         </div>
+
         <!-- /.col -->
 
         <div class="col-md-4">
-          <!-- Info Boxes Style 2 -->
           <div class="pb-2">
             <h4 class="font-weight-bold" style="color: #324e6f">Dívidas</h4>
           </div>
@@ -214,9 +165,17 @@
 
 <script>
 import VueApexCharts from "vue-apexcharts";
+import CardQuantityEmails from "./Dashboard/CardQuantityEmails.vue";
+import CardQuantityDebtorInteractions from "./Dashboard/CardQuantityDebtorInteractions.vue";
+import CardQuantityReceivablesProgress from "./Dashboard/CardQuantityReceivablesProgress.vue";
 
 export default {
-  components: { VueApexCharts },
+  components: {
+    VueApexCharts,
+    CardQuantityEmails,
+    CardQuantityDebtorInteractions,
+    CardQuantityReceivablesProgress,
+  },
 
   data() {
     return {
