@@ -19,8 +19,7 @@
         <!-- /.col -->
 
         <div class="col-md-4">
-          <card-receipt-information />
-
+          <card-info-debts />
           <card-transfers />
         </div>
       </div>
@@ -35,6 +34,7 @@ import CardQuantityDebtorInteractions from "./Dashboard/CardQuantityDebtorIntera
 import CardQuantityReceivablesProgress from "./Dashboard/CardQuantityReceivablesProgress.vue";
 import VueApexCharts from "vue-apexcharts";
 import CardReceiptInformation from "./Dashboard/CardReceiptInformation.vue";
+import CardInfoDebts from "./Dashboard/CardInfoDebts.vue";
 import CardTransfers from "./Dashboard/CardTransfers.vue";
 
 export default {
@@ -44,6 +44,7 @@ export default {
     CardQuantityDebtorInteractions,
     CardQuantityReceivablesProgress,
     CardReceiptInformation,
+    CardInfoDebts,
     CardTransfers,
   },
 

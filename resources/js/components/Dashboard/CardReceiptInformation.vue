@@ -1,21 +1,64 @@
 <template>
-  <div>
-    <div class="pb-2">
-      <h4 class="font-weight-bold" style="color: #324e6f">Dívidas</h4>
-    </div>
-    <div class="info-box mb-3">
-      <span class="info-box-icon mr-0"><span class="dot"></span></span>
-
-      <div class="d-flex flex-row align-items-center justify-content-around">
-        <div class="pr-5 mr-5">
-          <span class="text-left font-weight-bold" style="color: #324e6f"
-            >Pendentes</span
-          >
+  <div class="card">
+    <div class="card-body p-0">
+      <div class="row">
+        <div
+          class="
+            col-4
+            d-flex
+            align-items-center
+            flex-column
+            justify-content-between
+            p-4
+          "
+        >
+          <div class="mb-4">
+            <span class="fa-stack fa-3x">
+              <i class="fas fa-circle fa-stack-2x" style="color: #d8efea"></i>
+              <img
+                class="img-fluid ml-4"
+                widht="30"
+                src="/images/money.png"
+                alt="The Logo"
+                style="opacity: 0.8"
+              />
+            </span>
+          </div>
+          <div>
+            <h5 class="font-weight-bold" style="color: #324e6f">R$ 0,00</h5>
+          </div>
+          <div class="mb-4">
+            <small style="color: #324e6f"> Total recuperado no período </small>
+          </div>
+          <div>
+            <h5 class="font-weight-bold" style="color: #324e6f mb-0">
+              R$ 0,00
+            </h5>
+          </div>
+          <div class="mb-2">
+            <small style="color: #324e6f">
+              Total de pagamentos do período</small
+            >
+          </div>
         </div>
-        <div class="text-right pl-5 ml-5">
-          <span class="text-left font-weight-bold" style="color: #324e6f"
-            >2 dividas</span
-          >
+        <div
+          class="
+            col-md-8
+            d-flex
+            align-items-center
+            flex-column
+            justify-content-between
+            p-4
+          "
+        >
+          <!-- <div class="mb-2">skadlkl</div> -->
+          <VueApexCharts
+            width="530"
+            height="200"
+            type="line"
+            :options="options"
+            :series="series"
+          ></VueApexCharts>
         </div>
       </div>
     </div>
