@@ -26,7 +26,7 @@
         </li>
       </ul>
 
-      <ul class="navbar-nav mr-5 pr-4">
+      <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link"> <i class="fas fa-cog" /> Configurações</a>
         </li>
