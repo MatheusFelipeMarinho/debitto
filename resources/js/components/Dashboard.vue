@@ -164,10 +164,10 @@
 </template>
 
 <script>
-import VueApexCharts from "vue-apexcharts";
 import CardQuantityEmails from "./Dashboard/CardQuantityEmails.vue";
 import CardQuantityDebtorInteractions from "./Dashboard/CardQuantityDebtorInteractions.vue";
 import CardQuantityReceivablesProgress from "./Dashboard/CardQuantityReceivablesProgress.vue";
+import VueApexCharts from "vue-apexcharts";
 
 export default {
   components: {
