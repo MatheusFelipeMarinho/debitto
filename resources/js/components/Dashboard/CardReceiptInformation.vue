@@ -1,52 +1,34 @@
 <template>
-  <section class="content">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-8">
-          <card-receipt-information />
-          <card-quantity-receivables-progress />
+  <div>
+    <div class="pb-2">
+      <h4 class="font-weight-bold" style="color: #324e6f">Dívidas</h4>
+    </div>
+    <div class="info-box mb-3">
+      <span class="info-box-icon mr-0"><span class="dot"></span></span>
 
-          <div class="row">
-            <div class="col">
-              <card-quantity-emails />
-            </div>
-            <div class="col">
-              <card-quantity-debtor-interactions />
-            </div>
-          </div>
+      <div class="d-flex flex-row align-items-center justify-content-around">
+        <div class="pr-5 mr-5">
+          <span class="text-left font-weight-bold" style="color: #324e6f"
+            >Pendentes</span
+          >
         </div>
-
-        <!-- /.col -->
-
-        <div class="col-md-4">
-          <card-receipt-information />
-
-          <card-transfers />
+        <div class="text-right pl-5 ml-5">
+          <span class="text-left font-weight-bold" style="color: #324e6f"
+            >2 dividas</span
+          >
         </div>
       </div>
-      <!-- /.col -->
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
-import CardQuantityEmails from "./Dashboard/CardQuantityEmails.vue";
-import CardQuantityDebtorInteractions from "./Dashboard/CardQuantityDebtorInteractions.vue";
-import CardQuantityReceivablesProgress from "./Dashboard/CardQuantityReceivablesProgress.vue";
 import VueApexCharts from "vue-apexcharts";
-import CardReceiptInformation from "./Dashboard/CardReceiptInformation.vue";
-import CardTransfers from "./Dashboard/CardTransfers.vue";
 
 export default {
   components: {
     VueApexCharts,
-    CardQuantityEmails,
-    CardQuantityDebtorInteractions,
-    CardQuantityReceivablesProgress,
-    CardReceiptInformation,
-    CardTransfers,
   },
-
   data() {
     return {
       options: {
